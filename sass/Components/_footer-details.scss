@@ -1,0 +1,16 @@
+.footerDiv {
+  background: white;
+  margin: 0 40px 0 40px;
+  border: solid 1px white;
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+  transform: scale(1);
+  transition: 600ms;
+  a {
+    color: rgb(5, 15, 80);
+    background: white;
+  }
+  &:hover {
+    transform: scale(1.2);
+  }
+}

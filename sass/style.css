@@ -1,0 +1,793 @@
+@-webkit-keyframes user1 {
+  0% {
+    transform: translate(-500px);
+  }
+  50% {
+    transform: translate(100px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@keyframes user1 {
+  0% {
+    transform: translate(-500px);
+  }
+  50% {
+    transform: translate(100px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@-webkit-keyframes user2 {
+  0% {
+    transform: translate(500px);
+  }
+  50% {
+    transform: translate(-100px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@keyframes user2 {
+  0% {
+    transform: translate(500px);
+  }
+  50% {
+    transform: translate(-100px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@-webkit-keyframes colorred {
+  from {
+    background-color: white;
+    border: 5px solid white;
+  }
+  to {
+    background-color: red;
+    border: 5px solid red;
+  }
+}
+@keyframes colorred {
+  from {
+    background-color: white;
+    border: 5px solid white;
+  }
+  to {
+    background-color: red;
+    border: 5px solid red;
+  }
+}
+@-webkit-keyframes flash {
+  0% {
+    transform: translate(-9999px);
+  }
+  50% {
+    transform: translate(500px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@keyframes flash {
+  0% {
+    transform: translate(-9999px);
+  }
+  50% {
+    transform: translate(500px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes loaderspan {
+  from {
+    width: 0;
+  }
+  to {
+    width: 350px;
+  }
+}
+@keyframes loaderspan {
+  from {
+    width: 0;
+  }
+  to {
+    width: 350px;
+  }
+}
+@-webkit-keyframes loaderspanmobile {
+  from {
+    width: 0;
+  }
+  to {
+    width: 200px;
+  }
+}
+@keyframes loaderspanmobile {
+  from {
+    width: 0;
+  }
+  to {
+    width: 200px;
+  }
+}
+body {
+  background: black;
+  font-weight: bolder;
+  margin: auto;
+}
+
+main {
+  max-width: 1440px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+}
+
+.h1Index {
+  margin-left: 10px;
+  color: red;
+  font-size: 50px;
+}
+@media screen and (max-width: 768px) {
+  .h1Index {
+    text-align: center;
+  }
+}
+
+h1 {
+  color: red;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+.user .img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.user p {
+  color: white;
+  opacity: 50%;
+  text-align: center;
+  font-size: 25px;
+}
+.user:hover p {
+  opacity: 100%;
+}
+
+.user1 {
+  -webkit-animation: user1 1s ease-in-out;
+          animation: user1 1s ease-in-out;
+}
+
+.user2 {
+  -webkit-animation: user2 1s ease-in-out;
+          animation: user2 1s ease-in-out;
+}
+
+.pindex {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+h1 div {
+  width: 30px;
+}
+
+.fa-arrow-left {
+  margin: 0 0 0 10px;
+  transition: 400ms;
+}
+.fa-arrow-left:hover {
+  transform: scale(1.1);
+}
+
+.contact h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+  color: rgb(187, 160, 160);
+}
+
+.contactp {
+  justify-content: center;
+  text-align: center;
+}
+
+.contactp1 {
+  font-size: 20px;
+  margin-bottom: 40px;
+  transition: 500ms;
+}
+.contactp1:hover {
+  transform: scale(1.1);
+}
+
+.loader {
+  background: -webkit-linear-gradient(#ff0000, #960000, #460000, #0e0000);
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  font-family: "Shrikhand", sans-serif;
+  font-size: x-large;
+  vertical-align: middle;
+  text-align: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  -webkit-animation: loader 1s ease-in-out 2s forwards;
+          animation: loader 1s ease-in-out 2s forwards;
+}
+.loader .container {
+  display: inline-block;
+  width: 350px;
+  height: 20px;
+  border: 3px solid white;
+  padding-right: 1em;
+  vertical-align: middle;
+  position: absolute;
+  top: 40%;
+  left: 38%;
+  background-color: rgb(8, 1, 11);
+  -webkit-animation: loaderspan 2s ease-in-out;
+          animation: loaderspan 2s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .loader .container {
+    left: 10%;
+    -webkit-animation: loaderspanmobile 2s ease-in-out;
+            animation: loaderspanmobile 2s ease-in-out;
+    width: 200px;
+  }
+}
+
+.footerDiv {
+  background: white;
+  margin: 0 40px 0 40px;
+  border: solid 1px white;
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+  transform: scale(1);
+  transition: 600ms;
+}
+.footerDiv a {
+  color: rgb(5, 15, 80);
+  background: white;
+}
+.footerDiv:hover {
+  transform: scale(1.2);
+}
+
+.sectionindex {
+  display: flex;
+  justify-content: center;
+}
+
+.user {
+  width: 250px;
+  height: 280px;
+  box-shadow: 0 0 7px #c1c1c1;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 20px;
+}
+.user:hover {
+  border: 5px solid rgb(255, 255, 255);
+}
+
+.contact {
+  background-color: rgb(32, 32, 32);
+  justify-content: center;
+  overflow: hidden;
+}
+
+section h2 {
+  margin-top: 50px;
+  margin-left: 10px;
+  color: rgb(192, 182, 182);
+  font-size: 45px;
+}
+@media screen and (max-width: 768px) {
+  section h2 {
+    font-size: 20px;
+  }
+}
+
+.userH1 {
+  color: red;
+  text-align: center;
+  font-size: 70px;
+}
+
+.userSection {
+  display: flex;
+  justify-content: space-around;
+}
+
+.userContact {
+  background-color: rgb(206, 185, 185);
+  margin: auto;
+  width: 300px;
+  height: 220px;
+  border: 5px solid rgb(42, 35, 35);
+  border-radius: 15px;
+  box-shadow: 0 0 7px #c1c1c1;
+  justify-content: center;
+  box-sizing: border-box;
+  transform: scale(1);
+  transition: 500ms;
+}
+.userContact:hover {
+  transform: scale(1.2);
+}
+
+.overflow {
+  margin: auto;
+  margin-left: 15px;
+  box-sizing: border-box;
+}
+
+.diapo {
+  position: relative;
+  overflow: hidden;
+}
+
+.elementsSection {
+  display: flex;
+  width: 500px;
+  height: 320px;
+}
+
+.diapoSection {
+  flex: 1 0 100%;
+  position: relative;
+}
+.diapoSection img {
+  width: calc(90% - 5px);
+  height: 320px;
+}
+
+.elementsSection > img {
+  width: 80%;
+}
+
+#nav-gauche,
+#nav-droite {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(40, 149, 211);
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+#nav-droite {
+  right: 0;
+}
+
+#nav-gauche {
+  left: 0;
+}
+
+.overflow2 {
+  margin: auto;
+  margin-left: 15px;
+  box-sizing: border-box;
+}
+.overflow2 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: calc(90% - 5px);
+  height: 450px;
+}
+@media screen and (max-width: 768px) {
+  .overflow2 img {
+    height: 200px;
+    width: 230px;
+  }
+}
+
+.diapo2 {
+  overflow-x: scroll;
+  overflow-y: inherit;
+}
+
+.elementsSection2 {
+  display: flex;
+  width: 550px;
+  height: 360px;
+}
+@media screen and (max-width: 768px) {
+  .elementsSection2 {
+    height: 260px;
+    width: 230px;
+  }
+}
+
+.diapoSection2 {
+  flex: 1 0 100%;
+  position: relative;
+  border: 15px grey;
+}
+
+.diaposectionp {
+  width: 400px;
+}
+@media screen and (max-width: 768px) {
+  .diaposectionp {
+    width: 250px;
+  }
+}
+.diaposectionp img {
+  width: 400px;
+  height: 250px;
+  transition: 1s;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 768px) {
+  .diaposectionp img {
+    height: 200px;
+    width: 230px;
+  }
+}
+.diaposectionp img:hover {
+  transform: scale(1.1);
+}
+.diaposectionp img:hover + p {
+  transform: scale(1.1);
+}
+.diaposectionp p {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 12px;
+  transition: 1s;
+  color: rgb(192, 182, 182);
+}
+@media screen and (max-width: 768px) {
+  .diaposectionp p {
+    font-size: 15px;
+  }
+}
+
+.usersContact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.userSpec {
+  margin: auto;
+  width: 165px;
+  height: 166px;
+  box-shadow: 0 0 7px #c1c1c1;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.userSpec img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.headerContact {
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: auto;
+}
+.headerContact img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  filter: brightness(65%);
+}
+.headerContact i {
+  margin-top: 10px;
+  position: absolute;
+  right: 96%;
+}
+@media screen and (max-width: 768px) {
+  .headerContact i {
+    right: 92%;
+    font-size: 16px;
+  }
+}
+.headerContact h1 {
+  position: absolute;
+  top: -5%;
+  right: 80%;
+  font-size: 50px;
+  font-weight: bolder;
+}
+.headerContact h1 a {
+  color: red;
+}
+.headerContact h2 {
+  margin-left: 25px;
+  position: absolute;
+  top: 20%;
+  color: white;
+  font-size: 60px;
+  text-shadow: 20px black;
+}
+.headerContact h2 span {
+  color: red;
+}
+@media screen and (max-width: 1100px) {
+  .headerContact h2 {
+    font-size: 60px;
+    top: 12%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headerContact h2 {
+    top: 7%;
+    font-size: 15px;
+    margin-left: 35px;
+  }
+}
+.headerContact p {
+  width: 800px;
+  margin-left: 25px;
+  top: 40%;
+  position: absolute;
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+}
+@media screen and (max-width: 1100px) {
+  .headerContact p {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headerContact p {
+    top: 23%;
+    width: 180px;
+    font-size: 8px;
+    margin-left: 35px;
+  }
+}
+.headerContact .pheader {
+  background-color: white;
+  font-size: 24px;
+  text-align: center;
+  border: 5px solid white;
+  border-radius: 10px;
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  top: 80%;
+  right: 86%;
+  color: black;
+}
+.headerContact .pheader a {
+  padding: 10px;
+  margin-left: 0px;
+  width: 120px;
+  height: 30px;
+}
+.headerContact .pheader:hover {
+  -webkit-animation: colorred 500ms ease-in-out forwards;
+          animation: colorred 500ms ease-in-out forwards;
+  color: white;
+}
+@media screen and (max-width: 1100px) {
+  .headerContact .pheader {
+    right: 65%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headerContact .pheader {
+    width: 60px;
+    height: 16px;
+    top: 70%;
+    right: 70%;
+    font-size: 15px;
+  }
+}
+.headerContact .userheader {
+  position: absolute;
+  overflow: hidden;
+  top: 2%;
+  right: 1%;
+  height: 100px;
+}
+.headerContact .userheader:hover {
+  overflow: visible;
+}
+.headerContact .userheader:hover .flexheader {
+  background-color: rgb(35, 34, 34);
+  color: white;
+}
+.headerContact .userheader img {
+  filter: brightness(100%);
+  width: 100px;
+  height: 100px;
+}
+@media screen and (max-width: 768px) {
+  .headerContact .userheader img {
+    width: 25px;
+    height: 25px;
+  }
+}
+.headerContact .userheader ul {
+  margin: 0 0 0 -20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.headerContact .userheader ul .petitpoint {
+  align-self: center;
+  padding: 5px 0;
+}
+@media screen and (max-width: 768px) {
+  .headerContact .userheader ul .petitpoint {
+    padding: 2px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headerContact .userheader ul {
+    text-align: center;
+    margin: 0;
+    padding: 4px;
+  }
+}
+.headerContact .userheader li {
+  font-size: 15px;
+  padding: 0 10px;
+  margin: 5px;
+}
+@media screen and (max-width: 768px) {
+  .headerContact .userheader li {
+    font-size: 6px;
+    margin: 1px;
+  }
+}
+.headerContact .userheader li.x {
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .headerContact .userheader li.x {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headerContact .userheader .flexheader {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headerContact .userheader {
+    right: 0%;
+    height: 25px;
+  }
+}
+
+.divh1contact {
+  position: relative;
+  overflow: hidden;
+}
+
+.footerIndex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+
+.footeruser {
+  padding: 10px;
+  background-color: rgb(27, 26, 26);
+  color: white;
+  text-align: center;
+}
+.footeruser h2 {
+  font-size: 22px;
+  text-decoration: underline;
+  padding: 5px;
+}
+.footeruser p {
+  font-size: 18px;
+}
+
+.sectionmail {
+  text-align: center;
+  margin-top: 150px;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .sectionmail h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sectionmail p {
+    font-size: 16px;
+  }
+}
+.sectionmail article {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.sectionmail .mail {
+  height: 55px;
+  width: 500px;
+}
+@media screen and (max-width: 768px) {
+  .sectionmail .mail {
+    width: 200px;
+  }
+}
+.sectionmail button {
+  padding-bottom: 8px;
+  background-color: red;
+  color: white;
+  height: 65px;
+  width: auto;
+  font-size: 20px;
+  cursor: pointer;
+}
+.sectionmail p {
+  font-size: 20px;
+  opacity: 80%;
+}
+.sectionmail h2,
+.sectionmail p {
+  padding: 5px;
+  margin: auto;
+  width: 700px;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .sectionmail h2,
+.sectionmail p {
+    width: auto;
+  }
+}

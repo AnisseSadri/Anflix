@@ -1,0 +1,351 @@
+.contact {
+  background-color: rgb(32, 32, 32);
+  justify-content: center;
+  overflow: hidden;
+}
+
+section h2 {
+  margin-top: 50px;
+  margin-left: 10px;
+  color: rgb(192, 182, 182);
+  font-size: 45px;
+  @include mobile {
+    font-size: 20px;
+  }
+}
+
+.userH1 {
+  color: red;
+  text-align: center;
+  font-size: 70px;
+}
+// background: (290deg, #ff0000, #ea2e2e, #d85bb0, #840777, #6e0350);
+
+.userSection {
+  display: flex;
+  justify-content: space-around;
+}
+
+.userContact {
+  background-color: rgb(206, 185, 185);
+  margin: auto;
+  width: 300px;
+  height: 220px;
+  border: 5px solid rgb(42, 35, 35);
+  border-radius: 15px;
+  box-shadow: 0 0 7px #c1c1c1;
+  justify-content: center;
+  box-sizing: border-box;
+  transform: scale(1);
+  transition: 500ms;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.overflow {
+  margin: auto;
+  margin-left: 15px;
+  box-sizing: border-box;
+}
+
+.diapo {
+  position: relative;
+  overflow: hidden;
+}
+
+.elementsSection {
+  display: flex;
+  width: 500px;
+  height: 320px;
+}
+
+.diapoSection {
+  flex: 1 0 100%;
+  position: relative;
+  img {
+    width: calc(90% - 5px);
+    height: 320px;
+  }
+}
+
+.elementsSection > img {
+  width: 80%;
+}
+
+#nav-gauche,
+#nav-droite {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(40, 149, 211);
+  font-size: 3rem;
+  cursor: pointer;
+}
+#nav-droite {
+  right: 0;
+}
+#nav-gauche {
+  left: 0;
+}
+
+.overflow2 {
+  margin: auto;
+  margin-left: 15px;
+  box-sizing: border-box;
+  img {
+    object-fit: cover;
+    width: calc(90% - 5px);
+    height: 450px;
+    @include mobile {
+      height: 200px;
+      width: 230px;
+    }
+  }
+}
+
+.diapo2 {
+  overflow-x: scroll;
+  overflow-y: inherit;
+}
+
+.elementsSection2 {
+  display: flex;
+  width: 550px;
+  height: 360px;
+  @include mobile {
+    height: 260px;
+    width: 230px;
+  }
+}
+
+.diapoSection2 {
+  flex: 1 0 100%;
+  position: relative;
+  border: 15px grey;
+}
+
+.diaposectionp {
+  width: 400px;
+  @include mobile {
+    width: 250px;
+  }
+  img {
+    width: 400px;
+    height: 250px;
+    transition: 1s;
+    object-fit: contain;
+    @include mobile {
+      height: 200px;
+      width: 230px;
+    }
+    &:hover {
+      transform: scale(1.1);
+      + p {
+        transform: scale(1.1);
+      }
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 12px;
+    transition: 1s;
+    color: rgb(192, 182, 182);
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+}
+
+.usersContact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.userSpec {
+  margin: auto;
+  width: 165px;
+  height: 166px;
+  box-shadow: 0 0 7px #c1c1c1;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  img {
+    object-fit: contain;
+  }
+}
+
+.headerContact {
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: auto;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    filter: brightness(65%);
+  }
+  i {
+    margin-top: 10px;
+    position: absolute;
+    right: 96%;
+    @include mobile {
+      right: 92%;
+      font-size: 16px;
+    }
+  }
+  h1 {
+    position: absolute;
+    top: -5%;
+    right: 80%;
+    font-size: 50px;
+    font-weight: bolder;
+    a {
+      color: red;
+    }
+  }
+  h2 {
+    margin-left: 25px;
+    position: absolute;
+    top: 20%;
+    color: white;
+    font-size: 60px;
+    text-shadow: 20px black;
+    span {
+      color: red;
+    }
+    @include tablet {
+      font-size: 60px;
+      top: 12%;
+    }
+    @include mobile {
+      top: 7%;
+      font-size: 15px;
+      margin-left: 35px;
+    }
+  }
+  p {
+    width: 800px;
+    margin-left: 25px;
+    top: 40%;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    @include tablet {
+      width: 600px;
+    }
+    @include mobile {
+      top: 23%;
+      width: 180px;
+      font-size: 8px;
+      margin-left: 35px;
+    }
+  }
+  .pheader {
+    background-color: white;
+    font-size: 24px;
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 10px;
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    top: 80%;
+    right: 86%;
+    color: black;
+    a {
+      padding: 10px;
+      margin-left: 0px;
+      width: 120px;
+      height: 30px;
+    }
+    &:hover {
+      animation: colorred 500ms ease-in-out forwards;
+      color: white;
+    }
+    @include tablet {
+      right: 65%;
+    }
+    @include mobile {
+      width: 60px;
+      height: 16px;
+      top: 70%;
+      right: 70%;
+      font-size: 15px;
+    }
+  }
+  .userheader {
+    position: absolute;
+    overflow: hidden;
+    top: 2%;
+    right: 1%;
+    height: 100px;
+    &:hover {
+      overflow: visible;
+      .flexheader {
+        background-color: rgb(35, 34, 34);
+        color: white;
+      }
+    }
+    img {
+      filter: brightness(100%);
+      width: 100px;
+      height: 100px;
+      @include mobile {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    ul {
+      margin: 0 0 0 -20px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      .petitpoint {
+        align-self: center;
+        padding: 5px 0;
+        @include mobile {
+          padding: 2px 0;
+        }
+      }
+      @include mobile {
+        text-align: center;
+        margin: 0;
+        padding: 4px;
+      }
+    }
+    li {
+      font-size: 15px;
+      padding: 0 10px;
+      margin: 5px;
+      @include mobile {
+        font-size: 6px;
+        margin: 1px;
+      }
+      &.x {
+        font-size: 18px;
+        @include mobile {
+          font-size: 8px;
+        }
+      }
+    }
+    .flexheader {
+      @include mobile {
+        width: 60px;
+      }
+    }
+    @include mobile {
+      right: 0%;
+      height: 25px;
+    }
+  }
+}
+
+.divh1contact {
+  position: relative;
+  overflow: hidden;
+}

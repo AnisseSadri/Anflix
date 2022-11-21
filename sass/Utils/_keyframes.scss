@@ -1,0 +1,76 @@
+@keyframes user1 {
+  0% {
+    transform: translate(-500px);
+  }
+  50% {
+    transform: translate(100px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes user2 {
+  0% {
+    transform: translate(500px);
+  }
+  50% {
+    transform: translate(-100px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes colorred {
+  from {
+    background-color: white;
+    border: 5px solid white;
+  }
+  to {
+    background-color: red;
+    border: 5px solid red;
+  }
+}
+
+@keyframes flash {
+  0% {
+    transform: translate(-9999px);
+  }
+  50% {
+    transform: translate(500px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loaderspan {
+  from {
+    width: 0;
+  }
+  to {
+    width: 350px;
+  }
+}
+
+@keyframes loaderspanmobile {
+  from {
+    width: 0;
+  }
+  to {
+    width: 200px;
+  }
+}

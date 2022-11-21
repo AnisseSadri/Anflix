@@ -1,0 +1,50 @@
+.sectionmail {
+  text-align: center;
+  margin-top: 150px;
+  margin: auto;
+  h2 {
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+  p {
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+  article {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .mail {
+    height: 55px;
+    width: 500px;
+    @include mobile {
+      width: 200px;
+    }
+  }
+  button {
+    padding-bottom: 8px;
+    background-color: red;
+    color: white;
+    height: 65px;
+    width: auto;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  p {
+    font-size: 20px;
+    opacity: 80%;
+  }
+  h2,
+  p {
+    padding: 5px;
+    margin: auto;
+    width: 700px;
+    color: white;
+
+    @include mobile {
+      width: auto;
+    }
+  }
+}
