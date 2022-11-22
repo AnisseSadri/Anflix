@@ -461,6 +461,12 @@ section h2 {
     width: 250px;
   }
 }
+@media screen and (max-width: 768px) {
+  .diaposectionp video {
+    height: 200px;
+    width: 230px;
+  }
+}
 .diaposectionp img {
   width: 400px;
   height: 250px;
